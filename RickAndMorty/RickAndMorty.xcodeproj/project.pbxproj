@@ -22,6 +22,10 @@
 		AA675DAF2B2056D10070CC1F /* RMService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA675DAE2B2056D10070CC1F /* RMService.swift */; };
 		AA675DB12B2056DD0070CC1F /* RMRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA675DB02B2056DD0070CC1F /* RMRequest.swift */; };
 		AA675DB32B2057660070CC1F /* RMEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA675DB22B2057660070CC1F /* RMEndpoint.swift */; };
+		AA675DB52B2067E70070CC1F /* RMOrigin.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA675DB42B2067E70070CC1F /* RMOrigin.swift */; };
+		AA675DB72B2068C40070CC1F /* RMSingleLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA675DB62B2068C40070CC1F /* RMSingleLocation.swift */; };
+		AA675DB92B2069C40070CC1F /* RMCharacterStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA675DB82B2069C40070CC1F /* RMCharacterStatus.swift */; };
+		AA675DBB2B206A820070CC1F /* RMCharacterGender.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA675DBA2B206A820070CC1F /* RMCharacterGender.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +46,10 @@
 		AA675DAE2B2056D10070CC1F /* RMService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMService.swift; sourceTree = "<group>"; };
 		AA675DB02B2056DD0070CC1F /* RMRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMRequest.swift; sourceTree = "<group>"; };
 		AA675DB22B2057660070CC1F /* RMEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMEndpoint.swift; sourceTree = "<group>"; };
+		AA675DB42B2067E70070CC1F /* RMOrigin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMOrigin.swift; sourceTree = "<group>"; };
+		AA675DB62B2068C40070CC1F /* RMSingleLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMSingleLocation.swift; sourceTree = "<group>"; };
+		AA675DB82B2069C40070CC1F /* RMCharacterStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMCharacterStatus.swift; sourceTree = "<group>"; };
+		AA675DBA2B206A820070CC1F /* RMCharacterGender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMCharacterGender.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +105,8 @@
 		AA10550B2B1F51FB0064C710 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				AA675DBC2B206B120070CC1F /* RMCharacters */,
 				AA1055112B1F663F0064C710 /* RMLocation.swift */,
-				AA1055132B1F66480064C710 /* RMCharacters.swift */,
 				AA1055152B1F66570064C710 /* RMEpisode.swift */,
 			);
 			path = Models;
@@ -150,12 +158,24 @@
 			isa = PBXGroup;
 			children = (
 				AA1054FA2B1F4E940064C710 /* RMTabViewController.swift */,
-				AA1055182B1F66F20064C710 /* RMEpisodeViewController.swift */,
-				AA10551A2B1F66FB0064C710 /* RMLocationViewController.swift */,
 				AA10551C2B1F67100064C710 /* RMCharacterViewController.swift */,
+				AA10551A2B1F66FB0064C710 /* RMLocationViewController.swift */,
+				AA1055182B1F66F20064C710 /* RMEpisodeViewController.swift */,
 				AA10551E2B1F67220064C710 /* RMSettingsViewController.swift */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		AA675DBC2B206B120070CC1F /* RMCharacters */ = {
+			isa = PBXGroup;
+			children = (
+				AA1055132B1F66480064C710 /* RMCharacters.swift */,
+				AA675DB42B2067E70070CC1F /* RMOrigin.swift */,
+				AA675DB62B2068C40070CC1F /* RMSingleLocation.swift */,
+				AA675DB82B2069C40070CC1F /* RMCharacterStatus.swift */,
+				AA675DBA2B206A820070CC1F /* RMCharacterGender.swift */,
+			);
+			path = RMCharacters;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,6 +248,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA675DB52B2067E70070CC1F /* RMOrigin.swift in Sources */,
+				AA675DB72B2068C40070CC1F /* RMSingleLocation.swift in Sources */,
+				AA675DB92B2069C40070CC1F /* RMCharacterStatus.swift in Sources */,
+				AA675DBB2B206A820070CC1F /* RMCharacterGender.swift in Sources */,
 				AA10551B2B1F66FB0064C710 /* RMLocationViewController.swift in Sources */,
 				AA10551D2B1F67100064C710 /* RMCharacterViewController.swift in Sources */,
 				AA1055162B1F66570064C710 /* RMEpisode.swift in Sources */,

@@ -14,12 +14,17 @@ final class RMCharacterViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        let request = RMRequest(endpoint: .character)
-        print(request.url ?? "")
-        
-        RMService.shared.execute(request, 
-                                 expecting: RMCharacters.self) { result in
-            
+
+        RMService.shared.execute(.listCharacterRequest, 
+                                 expecting: RMGetAllCharactersResponse.self) { result in
+            switch result {
+            case .success(let model):
+                print("Total: "+String(model.info.count))
+                print("Page result count: "+String(model.results.count))
+                
+            case .failure(let error):
+                print(String(describing: error))
+            }
         }
     }
 

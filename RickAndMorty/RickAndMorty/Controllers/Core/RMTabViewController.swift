@@ -6,9 +6,11 @@
 //
 
 import UIKit
-//Final class -> It can not be Sub-Class
-final class RMTabViewController: UITabBarController {
 
+
+/// Controller to house tabs and root tab controllers
+final class RMTabViewController: UITabBarController {
+    //Final class -> It can not be Sub-Class
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.

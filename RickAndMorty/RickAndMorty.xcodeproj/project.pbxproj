@@ -257,7 +257,7 @@
 		AAA06E242B27511D00AD0FB4 /* CharacterDetails */ = {
 			isa = PBXGroup;
 			children = (
-				AA675DC52B20A7930070CC1F /* RMCharacterListView.swift */,
+				AA518CEE2B23083900D826D6 /* RMCharacterDetailView.swift */,
 				AAA06E262B27518F00AD0FB4 /* RMCharacterPhotoCollectionViewCell.swift */,
 				AAA06E282B2751A100AD0FB4 /* RMCharacterInfoCollectionViewCell.swift */,
 				AAA06E2A2B2751B500AD0FB4 /* RMCharacterEpisodesCollectionViewCell.swift */,
@@ -269,7 +269,7 @@
 			isa = PBXGroup;
 			children = (
 				AAA456B82B21A05F00213549 /* RMCharacterCollectionViewCell.swift */,
-				AA518CEE2B23083900D826D6 /* RMCharacterDetailView.swift */,
+				AA675DC52B20A7930070CC1F /* RMCharacterListView.swift */,
 			);
 			path = Character;
 			sourceTree = "<group>";

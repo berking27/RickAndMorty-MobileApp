@@ -3,4 +3,54 @@
    uuid = "01D0C17B-DF18-4C03-AA87-A1B5BB4FFEFB"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "454C8427-5FE0-4598-849B-863B0E5DA5D6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RickAndMorty/ViewModels/RMCharacterListViewViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "fetchAdditionalCharacters(url:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "454C8427-5FE0-4598-849B-863B0E5DA5D6 - db265c8956fbf0ac"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RickAndMorty.RMCharacterListViewViewModel.fetchAdditionalCharacters(url: Foundation.URL) -&gt; ()"
+                  moduleName = "RickAndMorty"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/berkinkoca/Desktop/Applications/Git%20Projects/RickAndMorty-MobileApp/RickAndMorty/RickAndMorty/ViewModels/RMCharacterListViewViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "70"
+                  endingLineNumber = "70"
+                  offsetFromSymbolStart = "260">
+               </Location>
+               <Location
+                  uuid = "454C8427-5FE0-4598-849B-863B0E5DA5D6 - db265c8956fbf70b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RickAndMorty.RMCharacterListViewViewModel.fetchAdditionalCharacters(url: Foundation.URL) -&gt; ()"
+                  moduleName = "RickAndMorty"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/berkinkoca/Desktop/Applications/Git%20Projects/RickAndMorty-MobileApp/RickAndMorty/RickAndMorty/ViewModels/RMCharacterListViewViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "73"
+                  endingLineNumber = "73"
+                  offsetFromSymbolStart = "260">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

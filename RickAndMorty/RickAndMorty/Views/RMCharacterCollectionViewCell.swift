@@ -52,18 +52,12 @@ final class RMCharacterCollectionViewCell: UICollectionViewCell {
         contentView.addSubviews(imageView, nameLabel, statusLabel)
         addConstraint()
         
-        setUpLayer()
-        
-        registerForTraitChanges([UITraitUserInterfaceStyle.self], handler: { (self: Self, previousTraitCollection: UITraitCollection) in
-            if self.traitCollection.userInterfaceStyle == .light {
-                // Code to execute in light mode
-                self.setUpLayer()
-            } else {
-                // Code to execute in dark mode
-                self.setUpLayer()
-            }
-        })
-        
+        /// Detecting If app is in Dark/Light Mode
+        if self.traitCollection.userInterfaceStyle == .dark {
+            setUpLayerDark()
+        } else {
+            setUpLayer()
+        }
         
     }
     
@@ -96,7 +90,15 @@ final class RMCharacterCollectionViewCell: UICollectionViewCell {
         contentView.layer.cornerRadius = 8
         contentView.layer.shadowColor = UIColor.systemGreen.cgColor
         contentView.layer.cornerRadius = 4
-        contentView.layer.shadowOffset = CGSize(width: -4, height: -2)
+        contentView.layer.shadowOffset = CGSize(width: -6, height: 4)
+        contentView.layer.shadowOpacity = 0.4
+    }
+    
+    private func setUpLayerDark() {
+        contentView.layer.cornerRadius = 8
+        contentView.layer.shadowColor = UIColor.systemGreen.cgColor
+        contentView.layer.cornerRadius = 4
+        contentView.layer.shadowOffset = CGSize(width: -8, height: 5)
         contentView.layer.shadowOpacity = 0.4
     }
     

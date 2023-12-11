@@ -69,16 +69,7 @@ extension RMCharacterDetailViewController: UICollectionViewDelegate, UICollectio
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        switch section {
-        case 0:
-            return 1
-        case 1:
-            return 8
-        case 2: 
-            return 20
-        default:
-            return 1
-        }
+        let sectionType = viewModel.sections[section]
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

@@ -33,14 +33,14 @@ final class RMCharacterDetailViewViewModel {
         sections = [
             .photo(viewModel: .init(imageUrl: URL(string: character.image))),
             .information(viewModels: [
-                .init(value: character.status.rawValue, title: "Status"),
-                .init(value: character.gender.rawValue, title: "Gender"),
-                .init(value: character.type, title: "Type"),
-                .init(value: character.species, title: "Species"),
-                .init(value: character.origin.name, title: "Origin"),
-                .init(value: character.location.name, title: "Location"),
-                .init(value: character.created, title: "Created"),
-                .init(value: "\(character.episode.count)", title: "Total Episodes"),
+                .init(type: .status, value: character.status.rawValue),
+                .init(type: .gender, value: character.gender.rawValue),
+                .init(type: .type, value: character.type),
+                .init(type: .species, value: character.species),
+                .init(type: .origin, value: character.origin.name),
+                .init(type: .location, value: character.location.name),
+                .init(type: .created, value: character.created),
+                .init(type: .episodeCount, value: "\(character.episode.count)"),
             ]),
             .episodes(viewModels: character.episode.compactMap ({
                 return RMCharacterEpisodesCollectionViewCellViewModel(episodeDataUrl: URL(string: $0))
@@ -89,10 +89,10 @@ final class RMCharacterDetailViewViewModel {
                 heightDimension: .fractionalHeight(1.0)
             )
         )
-        item.contentInsets = NSDirectionalEdgeInsets(top: 2,
-                                                     leading: 2,
-                                                     bottom: 2,
-                                                     trailing: 2)
+        item.contentInsets = NSDirectionalEdgeInsets(top: 8,
+                                                     leading: 4,
+                                                     bottom: 8,
+                                                     trailing: 4)
         
         let group = NSCollectionLayoutGroup.horizontal(
             layoutSize: NSCollectionLayoutSize(

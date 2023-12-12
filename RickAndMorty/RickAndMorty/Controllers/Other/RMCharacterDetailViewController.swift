@@ -87,6 +87,7 @@ extension RMCharacterDetailViewController: UICollectionViewDelegate, UICollectio
          let sectionType = viewModel.sections[indexPath.section]
           
           switch sectionType {
+              //PHOTO
           case .photo(let viewModel):
                guard let cell = collectionView.dequeueReusableCell(
                     withReuseIdentifier: RMCharacterPhotoCollectionViewCell.cellIdentifier,
@@ -95,8 +96,10 @@ extension RMCharacterDetailViewController: UICollectionViewDelegate, UICollectio
                     fatalError()
                }
                cell.configure(with: viewModel)
-               cell.backgroundColor = .systemPink
+               
                return cell
+              
+              //INFORMATION
           case .information(let viewModels):
                guard let cell = collectionView.dequeueReusableCell(
                     withReuseIdentifier: RMCharacterInfoCollectionViewCell.cellIdentifier,
@@ -105,8 +108,10 @@ extension RMCharacterDetailViewController: UICollectionViewDelegate, UICollectio
                     fatalError()
                }
                cell.configure(with: viewModels[indexPath.row])
-               cell.backgroundColor = .systemMint
+
                return cell
+              
+              //EPISODES
           case .episodes(let viewModels):
                guard let cell = collectionView.dequeueReusableCell(
                     withReuseIdentifier: RMCharacterEpisodesCollectionViewCell.cellIdentifier,
@@ -115,7 +120,7 @@ extension RMCharacterDetailViewController: UICollectionViewDelegate, UICollectio
                     fatalError()
                }
                cell.configure(with: viewModels[indexPath.row])
-               cell.backgroundColor = .systemGreen
+              
                return cell
           }
     }

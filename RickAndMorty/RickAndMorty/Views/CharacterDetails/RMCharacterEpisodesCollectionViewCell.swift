@@ -41,11 +41,8 @@ class RMCharacterEpisodesCollectionViewCell: UICollectionViewCell {
      
      override init(frame: CGRect) {
           super.init(frame: frame)
-         contentView.backgroundColor = .systemPink
-         contentView.layer.cornerRadius = 8
-         contentView.layer.borderWidth = 3
-         contentView.layer.borderColor = UIColor.systemBackground.cgColor
-         
+         contentView.backgroundColor = .tertiarySystemBackground
+         setUpLayer()
          contentView.addSubviews(seasonLabel, nameLabel, airDateLabel)
          
          setUpConstraints()
@@ -54,6 +51,11 @@ class RMCharacterEpisodesCollectionViewCell: UICollectionViewCell {
      required init?(coder: NSCoder) {
           fatalError("Unsupported")
      }
+    
+    private func setUpLayer() {
+        contentView.layer.cornerRadius = 8
+        contentView.layer.borderWidth = 3
+    }
      
      private func setUpConstraints() {
          NSLayoutConstraint.activate([
@@ -91,10 +93,11 @@ class RMCharacterEpisodesCollectionViewCell: UICollectionViewCell {
          }
          
          viewModel.fetchEpisode()
+         contentView.layer.borderColor = viewModel.borderColor.cgColor
      }
 
 }
 
 #Preview {
-    RMTabViewController()
+    RMEpisodeViewController()
 }

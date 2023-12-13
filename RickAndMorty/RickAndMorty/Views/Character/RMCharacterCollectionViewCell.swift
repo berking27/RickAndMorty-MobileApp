@@ -50,7 +50,7 @@ final class RMCharacterCollectionViewCell: UICollectionViewCell {
         super.init(frame: frame)
         contentView.backgroundColor = .secondarySystemBackground
         contentView.addSubviews(imageView, nameLabel, statusLabel)
-        addConstraint()
+        addConstraints()
         
         /// Detecting If app is in Dark/Light Mode
         if self.traitCollection.userInterfaceStyle == .dark {
@@ -65,7 +65,7 @@ final class RMCharacterCollectionViewCell: UICollectionViewCell {
         fatalError("Unsupported")
     }
     
-    private func addConstraint() {
+    private func addConstraints() {
         NSLayoutConstraint.activate([
             statusLabel.heightAnchor.constraint(equalToConstant: 32),
             statusLabel.leftAnchor.constraint(equalTo: contentView.leftAnchor, constant: 7),

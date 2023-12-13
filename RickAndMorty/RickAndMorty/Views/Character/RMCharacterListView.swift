@@ -54,7 +54,7 @@ final class RMCharacterListView: UIView {
         translatesAutoresizingMaskIntoConstraints = false
         addSubviews(collectionView, spinner)
         
-        addConstraint()
+        addConstraints()
         
         spinner.startAnimating()
         
@@ -69,7 +69,7 @@ final class RMCharacterListView: UIView {
         fatalError("Unsupported")
     }
     
-    private func addConstraint() {
+    private func addConstraints() {
         NSLayoutConstraint.activate([
             spinner.widthAnchor.constraint(equalToConstant: 100),
             spinner.heightAnchor.constraint(equalToConstant: 100),

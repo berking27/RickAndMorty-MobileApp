@@ -9,14 +9,15 @@ import UIKit
 
 /// VC to show details about single episode
 final class RMEpisodeDetailViewController: UIViewController {
-
+    
+    private let viewModel: RMEpisodeDetailViewViewModel
     private let url: URL?
     
     // MARK: - Init
     
     init(url: URL?) {
+        self.viewModel = .init(endpointUrl: url)
         self.url = url
-        
         super.init(nibName: nil, bundle: nil)
     }
     
